@@ -17,6 +17,13 @@ module.exports = function(environment) {
       }
     },
 
+    firebase: {
+        apiKey: "AIzaSyBVaFFGV7jZ_LbKx1fpvG9yumOFTuzBKps",
+        authDomain: "herdlifts2.firebaseapp.com",
+        databaseURL: "https://herdlifts2.firebaseio.com",
+        storageBucket: "herdlifts2.appspot.com"
+    },
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created

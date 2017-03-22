@@ -8,7 +8,7 @@ export default DS.Model.extend({
     title: DS.attr(),
     author: DS.attr(),
     comments: DS.hasMany('comment', { async: true }),
-    category: DS.belongsTo('category', { async: true}),
+    categories: DS.hasMany('category', { async: true}),
     tooLong: Ember.computed('body', function() {
       return (this.get('body').length > 200);
     }),

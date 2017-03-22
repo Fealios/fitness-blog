@@ -22,6 +22,15 @@ export default Ember.Route.extend({
     deletePost(post) {
       post.destroyRecord();
       this.transitionTo('admin');
+    },
+    saveCategory(params) {
+      var newCategory = this.store.createRecord('category', params);
+      var post = params.post;
+      post.get('category').addObject(newCategory);
+      newCategory.save().then(function() {
+        return post.save();
+      });
+      this.transitionTo('admin');
     }
   }
 });

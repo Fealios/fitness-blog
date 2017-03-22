@@ -1,0 +1,13 @@
+{{#if showCategoryForm}}
+<div class="well">
+  <form>
+    <div class="form-group">
+      <label for="name">Category Name</label>
+      {{input value=name class="form-control" id="name"}}
+    </div>
+    <button class="btn btn-primary"  {{action 'saveCategory'}}>Save</button>
+  </form>
+</div>
+{{else}}
+  <button {{action 'categoryFormShow'}}>Add New Category</button>
+{{/if}}

@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    {{nav-bar}}
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <ul>
+        {{#each model as |post|}}
+            <li>{{post.title}} {{update-post post=post update="update"}} {{delete-post post=post deletePost="deletePost"}}</li>
+        {{/each}}
+      </ul>
+
+    </div>
+    {{new-article savePost="savePost"}}
+  </div>
+</div>

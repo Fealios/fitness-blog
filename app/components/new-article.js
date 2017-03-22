@@ -1,19 +1,24 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  addNewPost: false,
   actions: {
-    saveComment() {
+    postFormShow() {
+      this.set('addNewPost', true)
+    },
+    savePost() {
       var params = {
         author: this.get('author'),
+        title: this.get('title'),
         body: this.get('body'),
         date: today(),
-        post: this.get('post')
+        url: this.get('url')
       };
-      this.sendAction('saveComment', params);
+      this.set('addNewPost', false);
+      this.sendAction('savePost', params);
     }
   }
 });
-
 
 function today() {
   var today = new Date();

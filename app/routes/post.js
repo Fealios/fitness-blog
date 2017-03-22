@@ -6,7 +6,6 @@ export default Ember.Route.extend({
     },
     actions: {
       saveComment(params) {
-        console.log("you're in post.js");
         var newComment = this.store.createRecord('comment', params);
         var post = params.post;
         post.get('comments').addObject(newComment);

@@ -5,7 +5,11 @@
         </figcaption>
     </figure>{{/link-to}}
     <div class="article-intro col-lg-12" style="padding-top: 10px;">
-        <strong>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor. Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor. Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor..</strong>
+      {{#if post.tooLong}}
+        <strong>{{post.bodyShort}}....</strong>
+      {{else}}
+        <strong>{{post.body}}</strong>
+      {{/if}}
     </div>
 
 </article>

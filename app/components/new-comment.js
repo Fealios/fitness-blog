@@ -3,6 +3,7 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   actions: {
     saveComment() {
+      console.log("you're in");
       var params = {
         author: this.get('author'),
         body: this.get('body'),

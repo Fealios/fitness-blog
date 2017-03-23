@@ -24,18 +24,23 @@ export default Ember.Route.extend({
       this.transitionTo('admin');
     },
     saveCategory(params) {
-      var newCategory = this.store.createRecord('category', params);
       var post = params.post;
-      post.get('categories').addObject(newCategory);
       this.store.query('category', { orderBy: "name", equalTo: params.name, limit: 1})
-        .then(function(result) {
-          if(!(result.get('length') > 0)) {
-            console.log("new category");
-            newCategory.save();
-          } else {
-            console.log("category already exists")
-          }
-        })
+      .then(function(result) {
+        if(!(result.get('length') > 0)) {
+          console.log("new category");
+          var newCategory = this.store.createRecord('category', params);
+          post.get('categories').addObject(newCategory);
+          newCategory.save().then(function() {
+            return post.save();
+          });
+        } else {
+          console.log("category already exists");
+          //need to .addObject to post with result
+          console.log(result);
+          console.log(result.meta)
+        }
+      })
       post.save();
       this.transitionTo('admin');
     }

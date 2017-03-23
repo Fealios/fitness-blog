@@ -1,0 +1,82 @@
+{
+  "categories" : {
+    "1" : {
+      "name" : "lifting"
+    },
+    "-Kfvp0bjcx0LxnDfWc2b" : {
+      "name" : "lifting",
+      "posts" : "-KfrrHYTQqtymMU9ZovU"
+    },
+    "-KfvrG_7-zey4SZBZWbC" : {
+      "name" : "running",
+      "posts" : "-KfrrHYTQqtymMU9ZovU"
+    }
+  },
+  "comments" : {
+    "-KfrCOXomwuhQmvbBB4f" : {
+      "author" : "nick",
+      "body" : "hello",
+      "date" : "March 22, 2017",
+      "post" : "article 2"
+    },
+    "-KfrCUTDZ2PT4I7E7MGI" : {
+      "author" : "Does Melvin Even Lift?",
+      "body" : "no",
+      "date" : "March 22, 2017",
+      "post" : "article 2"
+    },
+    "-KfrC_EShAQFUwk09LQR" : {
+      "author" : "nick",
+      "body" : "hi",
+      "date" : "March 22, 2017",
+      "post" : "article1"
+    },
+    "-Kfrb3yBwKx1QaO_m-bn" : {
+      "author" : "nick",
+      "body" : "hello",
+      "date" : "March 22, 2017",
+      "post" : "article 2"
+    },
+    "-Kfs4ciEiwJ_bXtt2ctp" : {
+      "author" : "nick",
+      "body" : "hello",
+      "date" : "March 22, 2017",
+      "post" : "-KfrrHYTQqtymMU9ZovU"
+    },
+    "comment1" : {
+      "author" : "jim",
+      "body" : ";lasdnfowa;ekfa",
+      "date" : "March 8"
+    }
+  },
+  "posts" : {
+    "-KfrrHYTQqtymMU9ZovU" : {
+      "author" : "melvin",
+      "body" : "i like corgis",
+      "categories" : {
+        "-Kfvp0bjcx0LxnDfWc2b" : true,
+        "-KfvrG_7-zey4SZBZWbC" : true
+      },
+      "comments" : {
+        "-Kfs4ciEiwJ_bXtt2ctp" : true
+      },
+      "date" : "March 22, 2017",
+      "title" : "corgi corgi corgi",
+      "url" : "http://cdn3-www.dogtime.com/assets/uploads/gallery/pembroke-welsh-corgi-dog-breed-pictures/prance-8.jpg"
+    },
+    "article1" : {
+      "author" : "author2",
+      "body" : ";oakdnsfoaw",
+      "date" : "today",
+      "title" : "test title",
+      "url" : "http://lekkihub.com/wp-content/uploads/2016/10/e2f38-fitness-girl-700x420.jpg"
+    },
+    "article3" : {
+      "author" : "author3",
+      "body" : "a;lksdo;fad;k",
+      "date" : "last friday",
+      "title" : "test title 3",
+      "url" : "http://d2auhg88b162pf.cloudfront.net/assets/categories/self/self_category_fitness-588aedbc4bdb910bc6c251502ca9f57b.jpg"
+    }
+  }
+}

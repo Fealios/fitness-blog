@@ -1,17 +1,18 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  showCategoryForm: false;
+  showCategoryForm: false,
   actions: {
     categoryFormShow() {
       this.set('showCategoryForm', true)
     },
     saveCategory() {
       var params = {
-        name: this.get('name')
-      };
+        name: this.get('name'),
+        post: this.get('post')
+      }
+      this.set('showCategoryForm', false);
+      this.sendAction('saveCategory', params);
     }
-    this.set('showCategoryForm', false);
-    this.sendAction('saveCategory', params)
   }
 });
